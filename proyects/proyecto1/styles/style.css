@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;1,700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body{
+    background-image: url(./../assets/pattern-background-desktop.svg) ;
+    background-repeat: no-repeat;
+    background-size: 1920px 500px;
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal{
+    background-color: white;
+    box-shadow: 1px 1px 15px rgb(172, 168, 168);
+    width: 400px;
+    height: 600px;
+    margin-top: 100px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.imagen{
+    width: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px ;
+}
+
+.informacion{
+    margin-top: 30px;
+}
+
+p{
+    margin: 20px;
+    color: #576574;
+}
+
+.plan{
+    border-radius: 15px;
+    background-color: hsl(225, 100%, 98%);
+    padding: 18px 10px;
+    margin: 20px 40px;
+    display: flex;
+}
+
+span{
+    color: #576574;
+    font-weight: 300;
+}
+
+.plan img{
+    margin-left: 15px;
+}
+
+h4{
+    margin-left: 10px;
+    font-weight: 700;
+}
+
+.plan a{
+    margin: 14px 10px auto 70px;
+    font-weight: 800;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario .pay{
+    text-decoration: none;
+    color: white;
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 1px 1px 8px hsl(245, 75%, 52%);
+    margin: 10px 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.pay:hover{
+    background-color: aquamarine;
+    transition: .2s;
+    color: hsl(245, 75%, 52%);
+    
+}
+
+.formulario .notPay{
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    color: gray;
+}
+
+.notPay:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    margin-top: 0;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+}
+
+p>i{
+    font-size: 20px;
+    color: hsl(245, 75%, 52%);
+}
