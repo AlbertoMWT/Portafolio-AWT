@@ -52,9 +52,9 @@
                 </p>
                 <blockquote class="frase">
                     <!-- "Sospecho con el pecho y calculo con el pie derecho" -->
-                    "Creo firmemente que casi todo es cuestión de actitud.
+                    "Creo firmemente que casi todo es cuestión de <br>actitud.
                     <br>
-                    No se trata de lo que ocurre, sino de cómo lo afrontas."
+                    No se trata de lo que ocurre, sino de cómo lo <br>afrontas."
                 </blockquote>
             </div>
             <img class="amb" src="./Assets/AMB.jpg" alt="Foto Alberto Méndez">
@@ -112,36 +112,46 @@
     </main>
 
     <section id="portafolio">
-        <h4>Mis habilidades y proyectos</h4>
-        <div>
-            <i class="fab fa-html5"></i>
-            <p>HTML5</p>
-
-            <i class="fab fa-css3-alt"></i>
-            <p>CSS3</p>
-
-            <i class="fab fa-js"></i>
-            <p>JavaScript</p>
+        <h4 class="tituloHabilidades">Mis habilidades</h4>
+        <div class="habilidades">
+            <div class="HTML">
+                <i class="fab fa-html5 HTML5"></i>
+                <p class="software">HTML5</p>
+            </div>
+            <div class="CSS">
+                <i class="fab fa-css3-alt CSS3"></i>
+                <p class="software">CSS3</p>
+            </div>
+            <div class="javascript">
+                <i class="fab fa-js JS"></i>
+                <p class="software">JavaScript</p>
+            </div>
         </div>
-        <div>
-           <a href="./proyects/proyecto1/index.html" target="_blanck"><img src="./Assets/proyect1.png" alt="Proyecto 1"></a>
-           <a href="./proyects/proyecto2/index.html" target="_blanck"><img src="./Assets/proyect2.png" alt="proyecto2"></a>
-        </div>
+    </section>
+
+    <section id="proyectos">
+        <h4 class="misProyectos">Mis Proyectos</h4>
+        <div class="proyects">
+            <a class="proyect1" href="./proyects/proyecto1/index.html" target="_blanck"><img src="./Assets/proyect1.png" alt="Proyecto 1"></a>
+            <a class="proyect2" href="./proyects/proyecto2/index.html" target="_blanck"><img src="./Assets/proyect2.png" alt="proyecto2"></a>
+         </div>
     </section>
 
     <section id="contacto">
         <h4>Contacto</h4>
         <p>Mandame un email y me pondré en contacto lo más pronto posible</p>
-        <div>
+        <div class="direccion">
             <a href="https://goo.gl/maps/5VLHvPNKzZS1WkmMA" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
             <p>Av. del fuerte, num 81, Frac. Puerto esmeralda, Coatzacoalcos, Ver. México</p>
         </div>
-        <form action="">
-            <input type="text" name="name" placeholder="Nombre Completo">
-            <input type="email" name="email" placeholder="Email">
-            <input type="text" name="asunto" placeholder="Asunto">
+        <form class="formulario" action="">
+            <i class="far fa-envelope"></i>
+            <p>Rellena el formulario</p>
+            <input type="text" name="name" placeholder="Nombre Completo" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="asunto" placeholder="Asunto" required>
             <input type="text" name="mensaje" placeholder="Déjame los detalles de lo que necesitas">
-
+            <button>Enviar Mensaje</button>
         </form>
     </section>
 

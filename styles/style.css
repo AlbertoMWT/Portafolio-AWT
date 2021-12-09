@@ -22,6 +22,8 @@ html{
 body{
     font-size: 16px; /* 1rem = 10px */
     font-family: 'Nunito', sans-serif;
+    background-image: url(../Assets/ep_naturalblack.png);
+    background-attachment: fixed;
 }
 
 /* Barra de navegación  */
@@ -258,16 +260,6 @@ label>i:hover{
     }
 } */
 
-
-@media (min-width: 1280px) {
-    .principal{
-        border: 1px solid rgba(0, 0, 0, 0);
-        background-image: url(../Assets/dark-grey-terrazzo.png);
-        background-attachment: fixed;
-    }
-}
-
-
 #sobreMi{
     background-image: url(../Assets/AMB.jpg);
     background-size: cover;
@@ -313,13 +305,12 @@ label>i:hover{
         width: 40%;
         height: 80%;
         margin: auto 10rem;
-        border: none;
-        background-color: var(--color-principal);
     }
 }
 
-img{
+.amb, .amb1{
     display: none;
+    object-fit: cover;
 }
 @media (min-width: 1280px) {
     .amb{
@@ -331,23 +322,20 @@ img{
     }
 }
 @media (min-width: 1920px) {
-    img{
+    .amb, .amb1{
         opacity: 0.7;
         transition-duration: 200ms;
         border: 5px solid white;
+        width: 30%;
+        height: 60%;
     }
     .amb1{
         display: initial;
         border-radius: 50px;
-        width: 30%;
-        height: 60%;
     }
-    .amb{
-        width: 30%;
-        height: 60%;
-    }
+
     img:hover{
-        transform: scale(1.05,1.05);
+        transform: scale(1.03,1.03);
         opacity: 1;
         transition-duration: 200ms;
     }
@@ -367,6 +355,7 @@ img{
         font-size: 5rem;
     }
 }
+
 @media (min-width: 1280px) {
     .info{
         font-size: 2.5rem;
@@ -420,6 +409,7 @@ img{
     box-shadow: 1px 1px 10px 1px rgb(78, 78, 78);
     margin: auto 1rem;
     background-color: #f5f6fa8a ;
+
     color: var(--color-secundario);
 }
 @media (min-width: 768px) {
@@ -473,3 +463,208 @@ img{
 
 
 /*  PORTAFOLIO */
+
+#portafolio{
+    text-align: center;
+    line-height: 5rem ;
+    padding-bottom: 0.5rem;
+}
+
+@media (min-width: 1280px) {
+    .habilidades{
+        display: flex;
+    }
+}
+
+.tituloHabilidades{
+    color: var(--color-amarillo);
+    margin: 3rem auto 3rem auto;
+    font-size: 4rem;
+}
+@media (min-width: 1280px) {
+    .tituloHabilidades{
+        margin: 7rem auto;
+        font-size: 5rem;
+    }
+}
+
+
+.HTML5, .CSS3, .JS{
+    font-size: 10rem;
+    color: white;
+}
+
+.HTML, .CSS, .javascript{
+    margin: 0 1rem 2rem 1rem;
+    line-height: 3rem;
+    border-radius: 2rem;
+    padding: 2rem;
+    color: white;
+}
+@media (min-width: 768px) {
+    .HTML, .CSS, .javascript{
+        width: 50%;
+        margin: 0 auto 2rem auto;
+    }
+}
+@media (min-width: 1280px) {
+    .HTML, .CSS, .javascript{
+        width: 35rem;
+        margin-bottom: 5rem;
+        padding: 5rem 5rem 5rem 5rem;
+    }
+}
+
+.HTML{
+    background-color: #E44D26;
+}
+
+.CSS{
+    background-color: #2EAADD;
+}
+
+.javascript{
+   background-color: #F7E018;
+}
+
+.software{
+    border-radius: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    box-shadow: 1px 1px 5px 1px black;
+    padding: 1rem;
+}
+
+/* Proyectos */
+
+#proyectos{
+    text-align: center;
+    padding-top: 2rem;
+}
+@media (min-width: 1280px) {
+    #proyectos{
+        padding-top: 10rem;
+    }
+}
+
+#proyectos>.misProyectos{
+    font-size: 4rem;
+    margin: 3rem auto 3rem auto;
+    color: var(--color-amarillo);
+}
+
+
+.proyects{
+    align-items: center;
+}
+@media (min-width: 1280px) {
+    #proyectos>.proyects{
+        display:flex;
+        justify-content: space-around;
+    }
+}
+
+.proyects>a>img{
+    margin-bottom: 2rem;
+}
+
+.proyects>.proyect1>img{
+    border: 4px solid rgb(175, 174, 174);
+    border-radius: 2rem;
+    width: 30rem;
+    height: 50rem;
+    object-fit: cover;
+}
+@media (min-width: 768px) {
+    .proyects>.proyect1>img{
+        width: 50rem;
+        height: 80rem;
+    }
+}
+@media (min-width: 1280px) {
+    .proyects>.proyect1>img{
+        width: 40rem;
+        height: 60rem;
+    }
+}
+
+.proyects>.proyect2>img{
+border: 4px solid rgb(175, 174, 174);
+border-radius: 2rem;
+width: 30rem;
+height: 20rem;
+}
+@media (min-width: 768px) {
+    .proyects>.proyect2>img{
+        width: 50rem;
+        height: 40rem;
+        object-fit: cover;
+    }
+}
+
+#contacto{
+    text-align: center;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contacto>h4{
+    font-size: 4rem;
+    color: var(--color-amarillo);
+    margin: auto auto 2rem auto;
+}
+
+#contacto>p{
+    color: var(--color-principal);
+    width: 90%;
+}
+
+.direccion{
+    width: 80%;
+    margin: 5rem auto 3rem auto;
+}
+
+.direccion>a>i{
+    font-size: 4rem;
+    color: var(--color-amarillo);
+}
+
+.direccion>p{
+    margin-top: 1rem;
+    color: var(--color-principal);
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.formulario{
+    width: 90%;
+    margin: 2rem auto 3rem auto;
+}
+
+.formulario>i{
+    font-size: 4rem;
+    color: var(--color-amarillo);
+}
+
+.formulario>p{
+    margin-top: 1rem;
+    color: var(--color-principal);
+    text-align: center;
+}
+
+.formulario>input{
+    width: 90%;
+    margin: 4rem 0 1rem 0;
+    outline: none;
+    background-color: rgba(221, 255, 238, 0);
+    border: 0px;
+    border-bottom: 1px solid var(--color-principal);
+}
+
+.formulario>button{
+    margin-top: 4rem;
+    padding: 1rem;
+    background-color: var(--color-amarillo);
+}
