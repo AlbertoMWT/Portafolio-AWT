@@ -114,15 +114,15 @@
     <section id="portafolio">
         <h4 class="tituloHabilidades">Mis habilidades</h4>
         <div class="habilidades">
-            <div class="HTML">
+            <div class="HTML" title="HTML5">
                 <i class="fab fa-html5 HTML5"></i>
                 <p class="software">HTML5</p>
             </div>
-            <div class="CSS">
-                <i class="fab fa-css3-alt CSS3"></i>
+            <div class="CSS" title="CSS3">
+                <i class="fab fa-css3-alt CSS3" ></i>
                 <p class="software">CSS3</p>
             </div>
-            <div class="javascript">
+            <div class="javascript" title="JS">
                 <i class="fab fa-js JS"></i>
                 <p class="software">JavaScript</p>
             </div>
@@ -141,18 +141,22 @@
         <h4>Contacto</h4>
         <p>Mandame un email y me pondré en contacto lo más pronto posible</p>
         <div class="direccion">
-            <a href="https://goo.gl/maps/5VLHvPNKzZS1WkmMA" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+            <a href="#mapaCasa"><i class="fas fa-map-marker-alt"></i></a>
             <p>Av. del fuerte, num 81, Frac. Puerto esmeralda, Coatzacoalcos, Ver. México</p>
         </div>
         <form class="formulario" action="">
             <i class="far fa-envelope"></i>
             <p>Rellena el formulario</p>
-            <input type="text" name="name" placeholder="Nombre Completo" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="text" name="asunto" placeholder="Asunto" required>
-            <input type="text" name="mensaje" placeholder="Déjame los detalles de lo que necesitas">
-            <button>Enviar Mensaje</button>
+            <input class="input" type="text" name="name" placeholder="Nombre Completo" required>
+            <input class="input" type="email" name="email" placeholder="Email" required>
+            <input class="input" type="text" name="asunto" placeholder="Asunto" required>
+            <textarea type="text" name="mensaje" placeholder="Déjame los detalles de lo que necesitas"></textarea>
+            <br>
+            <input class="button" type="submit" name="Enviar" value="Enviar mensaje">
+            <br>
+            <iframe id="mapaCasa" class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1895.6674020380278!2d-94.51672521790489!3d18.148484482650584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85e98528302c63d5%3A0xd982791828a57549!2sAv.%20Del%20Fuerte%2081%2C%2096536%20Coatzacoalcos%2C%20Ver.!5e0!3m2!1ses-419!2smx!4v1639093261187!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </form>
+
     </section>
 
     <footer>

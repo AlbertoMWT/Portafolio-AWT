@@ -40,6 +40,7 @@ body{
 @media (min-width: 1140px) {
     .navegacion{
         height: 6rem;
+        z-index: 1;
     }
 }
 
@@ -216,6 +217,7 @@ label>i:hover{
     background-image: url(../Assets/wallpaper.jpg);
     background-attachment: fixed;
     background-size: cover;
+    box-shadow: 1px 0px 20px 5px white;
     height:100vh;
     display: flex;
     flex-direction: column;
@@ -602,12 +604,16 @@ height: 20rem;
     }
 }
 
+
+/* Contacto */
+
 #contacto{
     text-align: center;
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 1px 0 10px 2px white;
 }
 
 #contacto>h4{
@@ -629,6 +635,22 @@ height: 20rem;
 .direccion>a>i{
     font-size: 4rem;
     color: var(--color-amarillo);
+    transition-duration: 200ms;
+    animation: updown 1s ease infinite;
+}
+.direccion>a:hover i{
+    color: var(--color-principal);
+}
+@keyframes updown {     
+    0%{top: 0;
+        transform: translate(0px,0px);
+    }     
+    50% {bottom: 5px;
+        transform: translate(0px,10px);
+    }     
+    100% {top: 0; 
+        transform: translate(0px,0px);
+    }
 }
 
 .direccion>p{
@@ -641,6 +663,7 @@ height: 20rem;
 .formulario{
     width: 90%;
     margin: 2rem auto 3rem auto;
+    
 }
 
 .formulario>i{
@@ -654,17 +677,67 @@ height: 20rem;
     text-align: center;
 }
 
-.formulario>input{
+.formulario>.input{
     width: 90%;
     margin: 4rem 0 1rem 0;
     outline: none;
     background-color: rgba(221, 255, 238, 0);
     border: 0px;
     border-bottom: 1px solid var(--color-principal);
+    color: white;
 }
 
-.formulario>button{
-    margin-top: 4rem;
+.formulario>textarea{
+    margin-top: 2rem;
+    width: 90%;
+    height: 8rem;
+    background: none;
     padding: 1rem;
-    background-color: var(--color-amarillo);
+    border-color: var(--color-principal);
+    resize: none;
+    color: white;
 }
+
+.formulario>.button{
+    margin-top: 2rem;
+    box-shadow: 3px 3px 5px -2px var(--color-amarillo);
+    padding: 1rem;
+    color: var(--color-secundario);
+    background-color: var(--color-amarillo);
+    transition-duration: 100ms;
+}
+.formulario>.button:hover{
+    transform: scale(1.1 , 1.1);
+    transition-duration: 100ms;
+    color: var(--color-rojo);
+}
+
+footer{
+    height: 10vh;
+}
+
+.mapDeg{
+    background-color: rgba(128, 128, 128, 0.459);
+}
+.mapa{
+    margin: 3rem auto 0 auto;
+    border-radius: 50px;
+    width: 70%;
+    height: 20rem;
+}
+@media (min-width: 1280px) {
+    .mapa{
+        margin: 3rem auto 0 auto;
+        border-radius: 50px;
+        width: 70%;
+        height: 50rem;
+        transition-duration: 200ms;
+    }
+    .mapa:hover{
+        transform: scale(1.05, 1.05);
+        transition-duration: 200ms;
+    }
+
+}
+
+
