@@ -166,6 +166,9 @@ label>i:hover{
         transform: scale(1.1, 1.1);
         transition-duration: .2s;
     }
+    .menu>li:hover a{
+        color: var(--color-amarillo);
+    }
 }
 
 .menu .p1{
