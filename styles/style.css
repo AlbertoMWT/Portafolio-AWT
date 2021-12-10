@@ -110,6 +110,7 @@ label>i:hover{
 }
 #in:checked + .menu{
     left: 0;
+    transition-duration: 200ms;
 }
 @media (min-width: 768px) {
 
@@ -410,6 +411,7 @@ label>i:hover{
     font-weight: bold;
     box-shadow: 1px 1px 10px 1px rgb(78, 78, 78);
     margin: auto 1rem;
+    padding: 1rem;
     background-color: #f5f6fa8a ;
 
     color: var(--color-secundario);
@@ -712,10 +714,6 @@ height: 20rem;
     color: var(--color-rojo);
 }
 
-footer{
-    height: 10vh;
-}
-
 .mapDeg{
     background-color: rgba(128, 128, 128, 0.459);
 }
@@ -737,7 +735,55 @@ footer{
         transform: scale(1.05, 1.05);
         transition-duration: 200ms;
     }
-
 }
 
+/* Footer */
+
+footer{
+    background-image: url(../Assets/double-bubble-dark.png);
+    color: rgb(172, 166, 166);
+    text-align: center;
+}
+
+.redesSociales{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+
+
+.redesSociales>a>i{
+    color: var(--color-principal);
+    font-size: 3rem;
+    margin: auto 1rem auto 1rem;
+}
+@media (min-width: 1280px) {
+    .redesSociales>a>i{
+        font-size: 4rem;
+        margin: auto 3rem auto 3rem;
+    }
+}
+.redesSociales>a:hover i{
+    transform: scale(1.05, 1.05);
+    color: var(--color-amarillo);
+}
+
+footer>h6{
+    color: var(--color-amarillo);
+    margin-top: 0.3rem;
+}
+@media (min-width: 1280px) {
+    footer>h6{
+        font-size: 1.5rem;
+    }
+}
+
+footer>p{
+    color: var(--color-principal);
+}
+@media (min-width: 1280px) {
+    footer>p{
+        font-size: 2.5rem;
+    }
+}
 
